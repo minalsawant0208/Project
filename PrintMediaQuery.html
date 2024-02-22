@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Media Query</title>
+    <style>
+        .box
+        {
+            width: 80%;
+            min-height: 200px;
+            margin: auto;
+            border: 4px solid #000;
+            background-color: lightgoldenrodyellow;
+        }
+        .heading h1
+        {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px;
+            text-align: center;
+            background-color: lightseagreen;
+        }
+        .answer p
+        {
+            padding: 10px;
+            text-align: justify;
+            background-color: lightcoral;
+        }
+        .answer img
+        {
+            width: 400px;
+            height: 300px;
+        }
+        @media print 
+        {
+            .box
+            {
+                background: none;
+            }
+            .heading h1
+            {
+                background: none;
+                color: crimson;
+                width: 90%;
+                margin: 10px auto;
+                border-radius: 10px;
+            }
+            .answer p
+            {
+                background: none;
+            }
+            .answer img
+            {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="heading">
+            <h1>What is html ?</h1>
+        </div>
+        <div class="answer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Iure ea deserunt dolorum omnis doloremque illo repudiandae 
+                quibusdam nesciunt nam corporis? Tempora, sunt. Laudantium 
+                porro dolores, pariatur distinctio vero exercitationem ex 
+                possimus. Fuga eveniet molestiae at magnam iure. Officiis 
+                qui harum veritatis possimus, ducimus repellendus officia.
+                 Expedita labore doloremque sed minima earum? Perspiciatis ea 
+                 voluptatum fugiat dolor vitae? Vero, tempora ex. Debitis quas 
+                 nobis eos, natus aliquam iusto repudiandae earum saepe consectetur 
+                 ducimus autem possimus, officiis voluptas, ea eum sunt incidunt. 
+                 Impedit reiciendis quaerat labore nulla architecto neque, 
+                 necessitatibus consectetur mollitia? Numquam id error molestiae
+                  dolore qui laboriosam, magni optio esse.
+                  ducimus autem possimus, officiis voluptas, ea eum sunt incidunt. 
+                  Impedit reiciendis quaerat labore nulla architecto neque, 
+                  necessitatibus consectetur mollitia? Numquam id error molestiae
+                   dolore qui laboriosam, magni optio esse.</p>
+                  <img src="img/ak.jpg">
+        </div>
+        <div class="heading">
+            <h1>What is CSS ?</h1>
+        </div>
+        <div class="answer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Iure ea deserunt dolorum omnis doloremque illo repudiandae 
+                quibusdam nesciunt nam corporis? Tempora, sunt. Laudantium 
+                porro dolores, pariatur distinctio vero exercitationem ex 
+                possimus. Fuga eveniet molestiae at magnam iure. Officiis 
+                qui harum veritatis possimus, ducimus repellendus officia.
+                 Expedita labore doloremque sed minima earum? Perspiciatis ea 
+                 voluptatum fugiat dolor vitae? Vero, tempora ex. Debitis quas 
+                 nobis eos, natus aliquam iusto repudiandae earum saepe consectetur 
+                 ducimus autem possimus, officiis voluptas, ea eum sunt incidunt. 
+                 Impedit reiciendis quaerat labore nulla architecto neque, 
+                 necessitatibus consectetur mollitia? Numquam id error molestiae
+                  dolore qui laboriosam, magni optio esse.
+                  ducimus autem possimus, officiis voluptas, ea eum sunt incidunt. 
+                  Impedit reiciendis quaerat labore nulla architecto neque, 
+                  necessitatibus consectetur mollitia? Numquam id error molestiae
+                   dolore qui laboriosam, magni optio esse.</p>
+        </div>
+    </div>
+</body>
+</html>
