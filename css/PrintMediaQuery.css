@@ -1,0 +1,19 @@
+.box {
+    background: none;
+}
+
+.heading h1 {
+    background: none;
+    color: crimson;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.answer p {
+    background: none;
+}
+
+.answer img {
+    display: none;
+}

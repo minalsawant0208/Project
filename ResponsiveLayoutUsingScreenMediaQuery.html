@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive layout using Screen Media Query</title>
+    <style>
+        .box
+        {
+            width: 60%;
+            min-height: 200px;
+            margin: auto;
+            border: 4px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .b1
+        {
+            width: 45%;
+            min-height: 100px;
+            background-color: crimson;
+        }
+        .b1 img
+        {
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+        .b2
+        {
+            width: 45%;
+            min-height: 100px;
+            background-color: lightpink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media only screen and (max-width:768px)
+        {
+            .box
+            {
+                flex-direction: column;
+            }
+            .b1
+            {
+                background-color: red;
+            }
+            .b1 img
+            {
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+            }
+            .b2
+            {
+                background-color: royalblue;
+                color: white;
+            }
+        }
+        @media only screen and (max-width:560px)
+        {
+            .b1
+            {
+               background-color: yellow;
+            }
+            .b1 img
+            {
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+            }
+            .b2
+            {
+                background-color: orangered;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="b1">
+            <img src="img/ak.jpg">
+        </div>
+        <div class="b2">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+                 fuga expedita error cumque a, aut natus dicta earum accusantium
+                veritatis!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptatum, 
+                esse amet repellat impedit aliquam optio eum! Beatae, corrupti sequi.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+                 fuga expedita error cumque a, aut natus dicta earum accusantium
+                veritatis!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptatum, 
+                esse amet repellat impedit aliquam optio eum! Beatae, corrupti sequi.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
